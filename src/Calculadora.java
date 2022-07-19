@@ -1,40 +1,38 @@
 import java.util.Scanner;
 
-import javax.sound.sampled.SourceDataLine;
-
 public class Calculadora {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        int a, b;
+        double a, b;
 
         System.out.println("Digite o primeiro valor: ");
         a = scan.nextInt();
         System.out.println("Digite o segundo valor: ");
         b = scan.nextInt();
 
-        int soma = somar(a, b);
+        double soma = somar(a, b);
         System.out.println("Soma:" + soma);
-        int subtracao = subtrair(a, b);
+        double subtracao = subtrair(a, b);
         System.out.println("Subtração:" + subtracao);
-        int multiplicacao = multiplicar(a, b);
+        double multiplicacao = multiplicar(a, b);
         System.out.println("Multiplicação:" + multiplicacao);
-        float divisao = dividir(a, b);
+        double divisao = dividir(a, b);
         System.out.println("Divisão:" + divisao);
     }
 
-    public static int somar(int a, int b) {
+    public static double somar(double a, double b) {
         return a + b;
     }
 
-    public static int subtrair(int a, int b) {
+    public static double subtrair(double a, double b) {
         return a - b;
     }
 
-    public static int multiplicar(int a, int b) {
+    public static double multiplicar(double a, double b) {
         return a * b;
     }
 
-    public static float dividir(int a, int b) {
+    public static double dividir(double a, double b) {
         return a / b;
     }
 }
